@@ -976,8 +976,8 @@
       <li><a href="#timeline">Plan</a></li>
     </ul>
     <button class="theme-toggle" onclick="toggleTheme()">
-      <span id="theme-icon">☀️</span>
-      <span id="theme-label">Light</span>
+      <span id="theme-icon">🌙</span>
+      <span id="theme-label">Dark</span>
     </button>
   </div>
 </nav>
@@ -985,7 +985,7 @@
 <!-- ── HERO ───────────────────────────────────────────── -->
 <div class="hero">
   <div class="hero-eyebrow">Remote Employee Engagement Initiative</div>
-  <h1>Remote<br/><span>Leadership</span><br/>Summit</h1>
+  <h1>AHA +<br/><span>Leadership</span><br/>Summit</h1>
   <p class="hero-sub">An annual, multi-day virtual experience designed exclusively for remote employees and the leaders who believe in them.</p>
   <p class="hero-tagline">"What would leadership actually showing up for remote employees look like?"</p>
   <p style="font-size:0.78rem; color:var(--muted); margin-top:-1.75rem; margin-bottom:2.5rem; letter-spacing:0.04em;">— The question that started everything</p>
@@ -1102,7 +1102,7 @@
     <!-- WFO PARTNERSHIP -->
     <div class="hourly-box" style="margin-top: 1.25rem; border-color: rgba(249,115,22,0.25); background: linear-gradient(135deg, rgba(249,115,22,0.06), rgba(234,88,12,0.04));">
       <h3 style="color: var(--accent);">🤝 WFO Partnership: Removing the Scheduling Barrier</h3>
-      <p>Checking in with your leader before every session is itself a barrier to participation. The Workforce Operations (WFO) partnership is how we eliminate it entirely — without creating more work for managers.</p>
+      <p>Checking in with your leader before every session is itself a barrier to participation. The WFO (Workforce Operations) partnership is how we eliminate it entirely — without creating more work for managers.</p>
 
       <p><strong style="color: var(--text);">How it works:</strong> Employees sign up for sessions through the summit portal as normal. Behind the scenes, WFO receives admin access to the sign-up system and handles all the scheduling on the backend — building approved summit time directly into each employee's schedule without requiring a separate manager conversation for every session.</p>
 
@@ -1629,7 +1629,7 @@
           <span class="faq-chevron">▼</span>
         </button>
         <div class="faq-a">
-          your connection platform is Apple's internal connection platform where employees build profiles listing both professional skills and personal conversation topics. Employees browse profiles and register for chats with people whose profiles resonate. <strong>Yes, you need to set up or refresh your profile</strong> before the summit — and it should reflect real human interests, not just your title and function. A step-by-step guide will be provided. Plan for about 15 minutes. The technology workstream lead will quality-check profiles before the summit and follow up with anyone who needs help.
+          Connect (your-connection-platform.example.com) is Apple's internal connection platform where employees build profiles listing both professional skills and personal conversation topics. Employees browse profiles and register for chats with people whose profiles resonate. <strong>Yes, you need to set up or refresh your profile</strong> before the summit — and it should reflect real human interests, not just your title and function. A step-by-step guide will be provided. Plan for about 15 minutes. The technology workstream lead will quality-check profiles before the summit and follow up with anyone who needs help.
         </div>
       </div>
 
@@ -1822,8 +1822,8 @@
     const html = document.documentElement;
     const isDark = html.getAttribute('data-theme') === 'dark';
     html.setAttribute('data-theme', isDark ? 'light' : 'dark');
-    document.getElementById('theme-icon').textContent = isDark ? '🌙' : '☀️';
-    document.getElementById('theme-label').textContent = isDark ? 'Dark' : 'Light';
+    document.getElementById('theme-icon').textContent = isDark ? '☀️' : '🌙';
+    document.getElementById('theme-label').textContent = isDark ? 'Light' : 'Dark';
     updateMapTiles(isDark ? 'light' : 'dark');
   }
 
